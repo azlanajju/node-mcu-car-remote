@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+body{
+  background: black;
+}
+.switch {
+  display: inline-block;
+}
+.switch input {
+  display: none;
+}
+.switch label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  right: 0;
+  top:40%;
+  transform: rotate(90deg)
+}
+
+
+.switch label::after {
+  content: "";
+  display: inherit;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.switch input:checked ~ label {
+  border-color: #ffffff;
+}
+
+.switch input:checked ~ label::after {
+  translate: 30px 0;
+  background: #ffffff;
+}
+
+.switch input:disabled ~ label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+
+.switch1 {
+  display: inline-block;
+}
+.switch1 input {
+  display: none;
+}
+.switch1 label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 15px;
+  border: 2px solid red;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  right: 0;
+  top:55%;
+  transform: rotate(90deg)
+}
+
+
+.switch1 label::after {
+  content: "";
+  display: inherit;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  background: red;
+  transition: 0.3s;
+}
+
+.switch1 input:checked ~ label {
+  border-color:red;
+}
+
+.switch1 input:checked ~ label::after {
+  translate: 30px 0;
+  background: red;
+}
+
+.switch1 input:disabled ~ label {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+   .triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 86.6px solid white;
+}
+.forward{
+  position: absolute;
+  top:60px;
+  right:50px;
+transform: rotate(90deg);
+}
+.backward{
+  position: absolute;
+  left:50px;
+  top: 60px;
+transform: rotate(-90deg);
+  
+}
+.left{
+  position: absolute;
+  margin: auto;
+  right:145px;
+  bottom: 220px;
+transform: rotate(0);
+  
+}
+
+.right{
+  position: absolute;
+  margin: auto;
+  right:145px;
+  bottom: 60px;
+transform: rotate(180deg) !important;
+}
+
+.triangle i{
+    position:absolute;
+    top:40px;
+    right: -13px;
+    font-size:40px;
+  }
+  .triangle:hover{
+  animation:bgchnge 1s linear ;
+  
+  
+    
+  }
+  
+  @keyframes bgchnge{
+    from{
+      
+  border-bottom: 86.6px solid grey;
+    }
+    to{
+      
+  border-bottom: 86.6px solid white;
+    }
+  }
+  
+  .info{
+    color: #444;
+    font-size: 10px;
+    position: absolute;
+    top:45%;
+    transform: rotate(90deg);
+    left: -20px;
+  }
+  .info span a{
+    color: red;
+    text-decoration: none;
+  }
+  .resource{
+    color: white;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 20px;
+    
+  }

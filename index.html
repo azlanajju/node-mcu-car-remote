@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Remote</title>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="info">Developed by <span><a href="https://github.com/azlanajju">Azlan</a></span></div>
+  <div class="resource">
+<i class="fa fa-github"></i></div>
+  
+  <div onmousedown="sendCommand('F')" onmouseup="stopCommand()" class="triangle forward">
+<i class="fa fa-angle-double-up"></i></div>
+  <div class="triangle backward" onmousedown="sendCommand('B')" onmouseup="stopCommand()">
+<i class="fa fa-angle-double-up"></i></div>
+  
+  <div class="triangle left" onmousedown="sendCommand('L')" onmouseup="stopCommand()">
+<i class="fa fa-angle-double-up"></i></div>
+  <div class="triangle right" onmousedown="sendCommand('R')" onmouseup="stopCommand()">
+<i class="fa fa-angle-double-up"></i></div>
+  
+  
+      <span class="switch" onchange="toggleLED('WLED')">
+        <input id="switch-rounded" type="checkbox" />
+        <label for="switch-rounded"></label>
+      </span>
+      
+      
+      <span class="switch1" onchange="toggleLED('RLED')">
+        <input id="switch1-rounded" type="checkbox" />
+        <label for="switch1-rounded"></label>
+      </span>
+      
+  <script src="./main.js"></script>
+</body>
+</html>
